@@ -1,0 +1,12 @@
+use db;
+create table students1(StudentId int,StudentName text,DepartmentId int,DOB int);
+select * from students1;
+insert into students1(StudentId,StudentName,DepartmentId,DOB)values(11,"Ahmed",1,1997);
+insert into students1(StudentId,StudentName,DepartmentId,DOB)values(12,"Aly",2,1996);
+insert into students1(StudentId,StudentName,DepartmentId,DOB)values(13,"Rio",1,1996);
+insert into students1(StudentId,StudentName,DepartmentId,DOB)values(14,"John",6,1996);
+insert into students1(StudentId,StudentName,DepartmentId,DOB)values(2,"Joe",5,1996);
+create table Department(DepartmentId int,DepartmentName text);
+insert into Department(DepartmentId,DepartmentName)values(1,"IT");
+insert into Department(DepartmentId,DepartmentName)values(2,"Arts");
+update students set DepartmentId=1 where StudentId=14;
